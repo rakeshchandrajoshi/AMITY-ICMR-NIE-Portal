@@ -252,7 +252,8 @@ def main():
             15: "Hemorrhagic fever",
             16: "Jaundice of < 4 weeks",
             17: "Only Fever < 7 days",
-            18: "Other"
+            18: "Other",
+            19: "Fever > 7 days"
         }
         
         # Syndrome selection dropdown
