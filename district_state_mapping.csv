@@ -28,11 +28,12 @@
 115,Central,Delhi
 116,Chamarajanagar,Karnataka
 117,Chamba,Himachal Pradesh
+117,Bilaspur,Himachal Pradesh
+117,Hamirpur,Himachal Pradesh
 118,Chamoli,Uttarakhand
 119,Champawat,Uttarakhand
 12,Dr. B.R. Ambedkar Konaseema,Andhra Pradesh
 12,Alluri Sitharama Raju,Andhra Pradesh
-12,NTR,Andhra Pradesh
 120,Champhai,Mizoram
 121,Chandauli,Uttar Pradesh
 122,Chandel,Manipur
@@ -64,7 +65,6 @@
 147,Cuddalore,Tamil Nadu
 148,Cuttack,Odisha
 15,Ambala,Haryana
-15,Hansi,Haryana
 150,Dahod,Gujarat
 151,Dakshin Bastar Dantewada,Chhattisgarh
 152,Dakshin Dinajpur,West Bengal
@@ -186,7 +186,6 @@
 257,Hisar,Haryana
 258,Hojai,Assam
 259,Hooghly,West Bengal
-26,Upper Dibang Valley,Arunachal Pradesh
 26,Anjaw,Arunachal Pradesh
 260,Hoshiarpur,Punjab
 261,Howrah,West Bengal
@@ -261,7 +260,6 @@
 323,Kanpur Nagar,Uttar Pradesh
 324,Kapurthala,Punjab
 325,Yanam,Puducherry
-325,Mahe,Puducherry
 325,Karaikal,Puducherry
 326,Karauli,Rajasthan
 327,Karbi Anglong,Assam
@@ -339,12 +337,10 @@
 397,Lower Siang,Arunachal Pradesh
 398,Lower Subansiri,Arunachal Pradesh
 399,Lucknow,Uttar Pradesh
-4,Vav-Tharad,Gujarat
 4,Ahmedabad,Gujarat
 40,Bageshwar,Uttarakhand
 400,Ludhiana,Punjab
 401,Lunglei,Mizoram
-402,MAUGANJ,Madhya Pradesh
 403,Madhepura,Bihar
 404,Madhubani,Bihar
 405,Madurai,Tamil Nadu
@@ -448,7 +444,7 @@
 497,Palamu,Jharkhand
 498,Palghar,Maharashtra
 499,Pali,Rajasthan
-5,Saiha,Mizoram
+499,Pratapgarh,Rajasthan
 5,Khawzawl,Mizoram
 5,Aizawl,Mizoram
 5,Hnahthial,Mizoram
@@ -669,6 +665,7 @@
 691,Udaipur,Rajasthan
 692,Udalguri,Assam
 693,Udam Singh Nagar,Uttarakhand
+693,Uttar Kashi,Uttarakhand
 694,Udhampur,Jammu And Kashmir
 695,Udupi,Karnataka
 696,Ujjain,Madhya Pradesh
@@ -719,11 +716,6 @@
 738,Yamunanagar,Haryana
 739,Yavatmal,Maharashtra
 74,Beed,Maharashtra
-741,South Andaman,Andaman And Nicobar Islands
-741,Nicobar,Andaman And Nicobar Islands
-742,Kushavati,Goa
-743,Bangalore Urban,Karnataka
-743,Bangalore Rural,Karnataka
 744,Mauganj,Madhya Pradesh
 747,Anupgarh,Rajasthan
 748,Didwana-Kuchaman,Rajasthan
@@ -764,10 +756,30 @@
 90,Bhind,Madhya Pradesh
 92,Bhojpur,Bihar
 93,Bhopal,Madhya Pradesh
-94,Bichom,Madhya Pradesh
 95,Bidar,Karnataka
 96,Bijapur,Chhattisgarh
 97,Bijnor,Uttar Pradesh
 99,Bilaspur,Chhattisgarh
 98,Bikaner,Rajasthan
-
+800,Chumoukedima,Nagaland
+801,Dimapur,Nagaland
+802,Kiphire,Nagaland
+803,Kohima,Nagaland
+804,Longleng,Nagaland
+805,Mokokchung,Nagaland
+806,Mon,Nagaland
+807,Niuland,Nagaland
+808,Noklak,Nagaland
+809,Peren,Nagaland
+810,Phek,Nagaland
+811,Shamator,Nagaland
+812,Tseminyu,Nagaland
+813,Tuensang,Nagaland
+814,Wokha,Nagaland
+815,Zunheboto,Nagaland
+900,Kargil,Ladakh
+901,Leh Ladakh,Ladakh
+950,Dadra And Nagar Haveli,The Dadra And Nagar Haveli And Daman And Diu
+951,Daman,The Dadra And Nagar Haveli And Daman And Diu
+952,Diu,The Dadra And Nagar Haveli And Daman And Diu
+953,Lakshadweep District,Lakshadweep

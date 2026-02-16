@@ -10,11 +10,9 @@
 1,Agar-Malwa
 2,Agra
 3,Ahilyanagar
-4,Vav-Tharad
 4,Ahmedabad
 5,Khawzawl
 5,Aizawl
-5,Saiha
 5,Hnahthial
 6,Deeg
 6,Phalodi
@@ -26,10 +24,8 @@
 11,Alirajpur
 12,Dr. B.R. Ambedkar Konaseema
 12,Alluri Sitharama Raju
-12,NTR
 13,Almora
 14,Alwar
-15,Hansi
 15,Ambala
 16,Ambedkar Nagar
 17,Amethi
@@ -113,7 +109,6 @@
 91,Bhiwani
 92,Bhojpur
 93,Bhopal
-94,Bichom
 95,Bidar
 96,Bijapur
 97,Bijnor
@@ -137,6 +132,8 @@
 115,Central
 116,Chamarajanagar
 117,Chamba
+117,Bilaspur
+117,Hamirpur
 118,Chamoli
 119,Champawat
 120,Champhai
@@ -343,7 +340,6 @@
 323,Kanpur Nagar
 324,Kapurthala
 325,Karaikal
-325,Mahe
 325,Yanam
 326,Karauli
 327,Karbi Anglong
@@ -416,7 +412,6 @@
 399,Lucknow
 400,Ludhiana
 401,Lunglei
-402,MAUGANJ
 403,Madhepura
 404,Madhubani
 405,Madurai
@@ -511,6 +506,7 @@
 497,Palamu
 498,Palghar
 499,Pali
+499,Pratapgarh
 500,Palnadu
 501,Palwal
 502,Panch Mahals
@@ -701,6 +697,7 @@
 691,Udaipur
 692,Udalguri
 693,Udam Singh Nagar
+693,Uttar Kashi
 694,Udhampur
 695,Udupi
 696,Ujjain
@@ -746,9 +743,6 @@
 737,Yadgir
 738,Yamunanagar
 739,Yavatmal
-741,Nicobar
-741,South Andaman
-742,Kushavati
 744,Mauganj
 747,Anupgarh
 748,Didwana-Kuchaman
@@ -768,3 +762,25 @@
 762,Uttar Bastar Kanker
 763,Y.S.R.
 764,Jayashankar Bhupalapally
+800,Chumoukedima
+801,Dimapur
+802,Kiphire
+803,Kohima
+804,Longleng
+805,Mokokchung
+806,Mon
+807,Niuland
+808,Noklak
+809,Peren
+810,Phek
+811,Shamator
+812,Tseminyu
+813,Tuensang
+814,Wokha
+815,Zunheboto
+900,Kargil
+901,Leh Ladakh
+950,Dadra And Nagar Haveli
+951,Daman
+952,Diu
+953,Lakshadweep District
