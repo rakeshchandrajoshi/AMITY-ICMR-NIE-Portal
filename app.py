@@ -252,8 +252,8 @@ def main():
             15: "Hemorrhagic fever",
             16: "Jaundice of < 4 weeks",
             17: "Only Fever < 7 days",
-            18: "Other",
-            19: "Fever > 7 days"
+            18: "Fever > 7 days",
+            19: "Other",
         }
         
         # Syndrome selection dropdown
@@ -269,7 +269,7 @@ def main():
         patient_data['syndrome_name'] = SYNDROME_OPTIONS[selected_syndrome]
         
         # If "Other" is selected, provide text input for specification
-        if selected_syndrome == 18:
+        if selected_syndrome == 19:
             other_syndrome = st.text_input(
                 "Please specify the syndrome:",
                 placeholder="Enter the specific syndrome...",
