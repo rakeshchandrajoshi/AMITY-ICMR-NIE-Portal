@@ -238,7 +238,7 @@ class TabularResNet(nn.Module):
         ])
 
         # ---------- Binary Features ----------
-        self.bin_linear = nn.Linear(num_binary, d_token) if num_binary > 0 else None
+        self.bin_linear = nn.Linear(num_binary, d_token)
         self.bin_gate = nn.Parameter(torch.zeros(1))
 
         # ---------- Token Management ----------
@@ -257,7 +257,7 @@ class TabularResNet(nn.Module):
         self.proj_head = nn.Sequential(
             nn.Linear(d_token, d_token * 2),
             nn.ReLU(inplace=True),
-            nn.Dropout(dropout),
+            # nn.Dropout(dropout),
             nn.Linear(d_token * 2, d_token),
             nn.ReLU(inplace=True),
             nn.Linear(d_token, 128)
@@ -280,7 +280,7 @@ class TabularResNet(nn.Module):
             If return_embed: (pooled_features, contrastive_embeddings)
             Else: class_logits
         """
-        B = xb.size(0) if xb.numel() > 0 else xc.size(0)
+        B = xb.size(0)
         tokens = []
 
         # ---------- Categorical Tokens ----------
@@ -305,15 +305,16 @@ class TabularResNet(nn.Module):
         cls = self.cls_token.expand(B, -1, -1)
         x = torch.cat([cls, x], dim=1)  # [B, 1 + num_tokens, d_token]
 
-        # ---------- Token Dropout (Training Only) ----------
-        if self.training:
-            keep = (torch.rand(x.size(1), device=x.device) > 0.1)
-            keep[0] = True  # Always keep CLS token
-            x = x[:, keep, :]
-            pos_embed_used = self.pos_embed[:, :self.max_tokens, :][:, keep, :]
-        else:
-            pos_embed_used = self.pos_embed[:, :x.size(1), :]
+        # # ---------- Token Dropout (Training Only) ----------
+        # if self.training:
+        #     keep = (torch.rand(x.size(1), device=x.device) > 0.1)
+        #     keep[0] = True  # Always keep CLS token
+        #     x = x[:, keep, :]
+        #     pos_embed_used = self.pos_embed[:, :self.max_tokens, :][:, keep, :]
+        # else:
+        #     pos_embed_used = self.pos_embed[:, :x.size(1), :]
 
+        pos_embed_used = self.pos_embed[:, :x.size(1), :]
         # Add positional embeddings
         x = x + pos_embed_used
 
@@ -345,8 +346,8 @@ class VirusPredictor:
     Loads bundled .pth files with model weights + preprocessing objects.
     """
     
-    def __init__(self, model1_path='models/streamlit_virus_model_Major.pth', 
-                 model2_path='models/streamlit_virus_model_other.pth'):
+    def __init__(self, model1_path='models/CustomMajor.pth', 
+                 model2_path='models/CustomOther.pth'):
         """
         Initialize predictor by loading both pretrained models.
         
