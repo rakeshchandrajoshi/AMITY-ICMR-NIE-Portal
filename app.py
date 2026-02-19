@@ -147,8 +147,8 @@ def main():
         and predict viral infections with high accuracy.
         
         ### Technical Specifications
-        - **Primary Model**: XGBoost classifier for 26 major virus categories
-        - **Secondary Model**: Specialized classifier for "Other Viruses" subcategorization  
+        - **Primary Model**: Custom Gated Residual Tabular Transformer
+        - **Secondary Model**: Custom Gated Residual Tabular Transformer classifier for "Other Viruses" subcategorization  
         - **Feature Engineering**: 80+ engineered features including temporal, geographical, and symptom interaction variables
         - **Optimization**: Cached models and pre-computed lookup tables for real-time performance
         
