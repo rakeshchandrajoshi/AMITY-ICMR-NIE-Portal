@@ -45,7 +45,9 @@ SYMPTOM_DISPLAY_NAMES = {
     'JAUNDICE': 'Jaundice',
     'REDEYE': 'Red Eye',
     'DISCHARGEEYES': 'Discharge Eyes',
-    'CRUSHINGEYES': 'Crushing Eyes'
+    'CRUSHINGEYES': 'Crushing Eyes',
+    'SWELLINGEYES': 'Swelling Eyes',
+    'RETROORBITALPAIN': 'Retro-orbital Pain',
 }
 
 # Database imports (minimal addition)
@@ -67,13 +69,6 @@ except Exception as config_error:
         layout="wide"
     )
 
-
-
-
-
-
-
-
 @st.cache_data
 def load_mappings():
     """Load state, district, and district-state mapping CSV files"""
@@ -85,11 +80,6 @@ def load_mappings():
     except Exception as e:
         st.error(f"Error loading mapping files: {e}")
         return None, None, None
-
-
-
-
-
 
 def main():
     # Top logos
