@@ -184,7 +184,7 @@ def main():
         patient_data = {}
 
         # Demographics (MATCH EXACT TRAINING COLUMN NAMES)
-        patient_data['age'] = st.sidebar.number_input("Age", min_value=0, max_value=120, value=30)
+        patient_data['age'] = st.sidebar.number_input("Age(less than 0 will be taken as months)", min_value=0.0, max_value=120.0, value=30.0, step=0.1)
         patient_data['SEX'] = st.sidebar.selectbox("Sex", options=[0, 1], 
                                                     format_func=lambda x: "Female" if x == 0 else "Male", index=1)
         patient_data['PATIENTTYPE'] = st.sidebar.selectbox("Patient Type", options=[0, 1], 
@@ -242,7 +242,7 @@ def main():
             15: "Hemorrhagic fever",
             16: "Jaundice of < 4 weeks",
             17: "Only Fever < 7 days",
-            18: "Fever > 7 days",
+            18: "Fever >= 7 days",
             19: "Other",
         }
         
